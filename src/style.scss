@@ -58,3 +58,28 @@
     stroke-dashoffset: 0;
   }
 }
+
+.diagram-editor__animated0 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: diagram-editor-lr--link-pulse 50s linear infinite;
+}
+
+.diagram-editor__animated1 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: diagram-editor-rl--link-pulse 50s linear infinite;
+}
+
+
+@keyframes diagram-editor-lr--link-pulse {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes diagram-editor-rl--link-pulse {
+  from {
+    stroke-dashoffset: 0;
+  }
+}

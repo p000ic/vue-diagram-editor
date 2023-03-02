@@ -9,6 +9,7 @@ export default class Link {
   end_port = null;
   animated = null;
   is_dark = null;
+  inverted_flow = null;
 
   /**
    * @param {String} props.id
@@ -19,6 +20,7 @@ export default class Link {
    * @param {String} props.end_port
    * @param {Boolean} props.animated
    * @param {Boolean} props.is_dark
+   * @param {Boolean} props.inverted_flow
    */
   constructor(props) {
     this.id = props.id || ulid();
@@ -31,5 +33,6 @@ export default class Link {
     this.end_port = props.end_port || 'default';
     this.animated = props.animated || false;
     this.is_dark = props.is_dark || false;
+    this.inverted_flow = props.inverted_flow || false;
   }
 }
